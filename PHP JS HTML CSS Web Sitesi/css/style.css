@@ -1,0 +1,352 @@
+*{                               /*bu kısım tüm site sayfasını etkiler*/
+   box-sizing: border-box;     /*sayfamızda padding ve border gibi değerler kullanıldığında içeriklerin genişlemesini önler.*/
+   
+}
+
+body{
+    font-family: 'Nunito', sans-serif;  /*Nunito fontunda sorun varsa sans serife geçer*/
+    margin:0; 
+}
+ 
+#menu{  /*sectionlar blog etikettir tüm genişliği kaplar sadece uzunluk verilir*/
+    height:80px;
+    padding: 0 20px;
+
+}
+
+#logo {  /*id # ile seçilir*/
+    font-size:30px; 
+    line-height:80px;  /*satır yüksekliği verir ve yazıyı uzunluk olarak ortalar */
+    color:#003666;
+    float:left;  /* float left ile logo sola kayar diğer ifadeler sağdan başlayarak etrafını sarar*/
+
+}
+
+nav{
+     float:right;
+     line-height:80px; 
+}
+
+nav a:link {  /*tıklanmamış haldeki özellikler*/
+    text-decoration:none;  /*alltaki çizgiler kalkar*/
+    margin-right:25px; 
+    color: #003666;
+}
+
+
+nav a:hover{  /*mouse ile üzerine gelindiğinde özellik */
+    border-bottom:2px solid #003666;  /*alttan çizgi*/
+
+}
+
+nav a:visited{ /*önceden tıklanmış*/
+    text-decoration:none;  /*alltaki çizgiler kalkar*/
+    margin-right:25px; 
+    color: #003666;
+
+}
+
+.ikon  {  /*ikon içeren tüm klasslara uygulandı*/
+    margin-right:7px;
+    font-size:16px;
+  
+
+}
+
+#anasayfa{
+    height:600px;
+    background-image:url("../img/r2.jpg"); /*resim ekleme*/
+    background-size:cover;  /*arkaplana resmi sığdırır*/
+    background-position: center; /*resmin orta kısmını merkeze koyar*/
+    background-attachment:fixed;  /*ekran aşağı kayarken resim sabit kalır*/
+
+}
+
+#black{  /*blok etiket genişliğe kendisi yayılır*/
+    height:600px;
+    background-color:black;
+    opacity:0.5;  /* opaklık*/
+
+}
+
+#icerik {
+     position:absolute; /*diğerleri sabit kalması için*/
+     top:50%; /*yukarıdan yüzde 50*/
+     left:40% /*soldan yüzde 40*/
+     transform: translate (-50%,-50%);       /*(sağa,aşağıya)  - değer alırsa tam tersi. Yapılan değişikliklere ek olarak değişiklik yapar. Baştan değil. */
+     left: 200px;
+     right: 350px;
+     color:white;
+     font-size:20px;
+}
+
+
+#hakkimizda {
+    background-color: #f8f9fa;
+    padding:50px;
+    text-align:center; 
+    text-transform:capitalize; /*baş harflerini büyük yapar*/
+    font-weight: 600; /*kalınlık*/
+}
+
+h3{
+    font-size:55px;
+    color:#003666;
+    text-shadow: 0px 1px 1px black; /*gölge*/
+    font-weight: 600 ;
+}
+
+.container {
+    width:1200px;
+    height:auto;
+    margin:auto;         
+}
+
+#sol {
+    float:left; /*sola yaslanmasını sağlar*/
+    border-right:3px solid #445c6e;  /*#sol idsinin sağına dik çizgi çeker*/
+    font-size:30px; 
+    width:400px;
+    color:#445c6e;
+}
+
+#h5sol {
+    line-height:1,6;  /*satır yüksekliği   %160 ile eşdeğer.*/
+    font-size:22px;
+    font-weight: 600;
+    
+}
+
+#h5sol, #sag{  /*hem sağa hem sola verilen komutlar*/
+    margin:0;
+    padding:0;
+    margin-top:20px;
+
+}
+
+span {
+    font-size:50px;
+    margin-right:7px;  /*sağdaki paragraftan biraz uzak durmalı*/
+    line-height:42px;
+    color:#003666;
+    font-weight:600;
+    float:left;
+      
+}
+
+#sag{
+    float:right;  /*paragrafı sağa dayadık*/
+    width:750px;  /*sığmadığı için genişlliği  küçülttük*/
+    color:#999999;
+    text-align:center; /*wordteki ortala gibi ortalar*/
+    letter-spacing:1px; /*harf aralığı*/
+    font-size:15px;
+    line-height: 1.8;
+   
+}
+
+.img-fluid{
+max-width:100%; /*resmin genişliğe göre ekrana sığmasına sağlar*/
+height:auto;
+}
+                             
+.mt100 {
+    margin-top:100px;
+
+}
+
+#pson {
+    color:#999;
+    letter-spacing:1px;
+    font-size:15px;
+    line-height: 1.8;
+    margin-top:30px;
+}
+
+#egitimler {
+    backgorund-color:#fff;
+    padding:50px;
+    text-align:center;
+    height:700px;
+
+}
+
+.card{
+    width:320px;
+    height:350px;
+    border:1px solid #ddd;
+    padding:0;
+    display:inline-block; /*div bir blok etikettir bu yüzden inline-block olarak hem inline gibi hem aynı satıra gelebilir hem de blok gibi genişlik ve yükseklik özelliği alabilir*/
+}
+
+.baslikcard {
+    font-size:15px;
+    color:#003666;
+}
+
+.cardp{
+    color:#888;
+}
+
+
+.card:hover{  /*mouse ile üzerine gelindiğinde*/
+    border:1px solid gray; 
+    
+}
+
+#ekip {
+    background-color:#003666;
+    padding:50px;
+    height:850px;
+    text-align:center;
+}
+
+#ekiph3{
+    color:white;
+}
+
+.sutun-sol-sag{
+    width:385px;
+    float:left;
+    padding:50px;
+
+}
+
+.oval {
+    border-radius:50%;  /*resmi ovalleştirir.*/
+}
+
+.ekipisim {
+    color:white;
+    font-size:25px;
+    margin-bottom:12px;
+}
+
+.ekipp{
+    color:#888;
+    font-size: 18px;
+}
+
+.social{
+    color:white;
+    border:1px solid white;
+    padding:10px;
+    width:50px;
+    border-radius:5px;
+    margin:5px 10px;
+}
+
+.social:hover{   /*social ikonlarına mouse geldiğinde*/
+    background:	#888;
+
+}
+
+.sutun{
+    width:385px;
+    float:left;
+    padding:10px;   /*padding azaltılarak resmin ve sütundaki yazıların daha çok ekranda boyut kaplaması sağlandı*/
+}
+
+#iletisim{
+    background: url(../img/iletisim.jpg); 
+    background-size:cover;
+    padding:50px;
+    height:auto;
+    text-align:center;
+
+}
+
+#h3iletisim{
+    color:white;
+}
+
+#iletisimopak{
+    background:rgba(255,255,255,0.2);
+    padding:30px 20px;
+    border-radius:5px; /*köşeleri ovalleştirir*/
+    margin-bottom:50px;
+    height:550px;
+
+}
+
+#formgroup{
+    width:700px;
+    float:left;   /*form sola yaslı olması için*/
+    height:500px;
+    text-align:left;  /*sola yaslı olması için*/
+
+}
+
+#solform{
+    width:49%;
+    float:left;
+
+}
+#sagform{
+    float:right;
+    width:50%;
+}
+
+.form-control{
+    width:100%;
+    padding:10px;
+    font-size:15px;
+    line-height:1.5; /*1.5 katına çıkartır*/
+    color:#495057;
+    background-color:white;
+    margin:10px;
+    border-radius:5px;
+    border:1px solid #ced4da;
+}
+
+textarea{
+    font-family: Arial;
+}
+
+input[type="submit"] {   /*inputlardan submit tipinde olanı düzenler*/
+    cursor:pointer;  /*mouse geldiğinde şekli ok şekli değişir*/
+    background-color:#445c6e;
+    font-size:18px;
+    letter-spacing: 1px;
+    padding:10px 30px;
+    color:white;
+    border:2px solid white;
+    border-radius:5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#adres {
+    width: 450px;
+    float:right;
+    padding:30px;
+    height:500px;
+    text-align:left;
+}
+
+#adresbaslik{
+    font-size: 30px;
+    color:white;
+}
+
+.adresp{
+    color:#ddd;
+    font-size:15px;
+    letter-spacing: 1.5px;
+}
+
+#copyright{
+    color:white;
+    font-size;20px;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+#up {
+    color:white;
+    border:1px solid white;
+    border-radius:50%;
+    font-size: 15px;
+    padding:9px 12px;
+    margin-top: 20px;
+}
