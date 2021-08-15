@@ -21,11 +21,11 @@
     <section id="menu">
         <div id="logo">Paylaştıkça</div>
         <nav>
-            <a href=""><i class="fas fa-home ikon"></i>Anasayfa</a>  <!--hepsine ikon classı eklendi çünkü hepsine birden düzenlemeyi kolaylaştırmak için-->
-            <a href=""><i class="fas fa-info ikon"></i>Hakkımızda</a>
-            <a href=""><i class="fas fa-graduation-cap ikon"></i>Eğitimler</a>
-            <a href=""><i class="fas fa-users ikon"></i>Ekip</a>
-            <a href=""><i class="fas fa-phone-square ikon"></i>İletişim</a>
+            <a href="#anasayfa"><i class="fas fa-home ikon"></i>Anasayfa</a>  <!--hepsine ikon classı eklendi çünkü hepsine birden düzenlemeyi kolaylaştırmak için-->
+            <a href="#hakkimizda"><i class="fas fa-info ikon"></i>Hakkımızda</a>
+            <a href="#egitimler"><i class="fas fa-graduation-cap ikon"></i>Eğitimler</a>
+            <a href="#ekip"><i class="fas fa-users ikon"></i>Ekip</a>
+            <a href="#iletisim"><i class="fas fa-phone-square ikon"></i>İletişim</a>
         </nav>
 
 </section> 
